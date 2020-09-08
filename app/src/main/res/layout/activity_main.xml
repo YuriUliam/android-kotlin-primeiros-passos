@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:text="Primeiros passos em Kotlin"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewTitle"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:id="@+id/editTextName"
+        android:hint="Digite o seu nome aqui"
+        android:textSize="30sp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        android:id="@+id/editTextAge"
+        android:hint="Digite a sua idade"
+        android:textSize="30sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge"
+        android:id="@+id/buttonVerifyAge"
+        android:onClick="handleSubmit"
+        android:text="Verificar idade"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonVerifyAge"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewResult"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
